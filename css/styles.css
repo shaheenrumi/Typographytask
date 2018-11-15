@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+#navbar{
+    display: flex;
+    background-color:  #e7e5f7;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.26);
+    
+}
+
+#navbar .logo > img{
+    display: flex;
+    height: 5rem;
+    width: 10rem;
+}
+#navbar .navbar-wraper > ul{
+    display: flex;
+    line-height: 5;
+    padding-right: 2rem;
+} 
+.navbar-wraper > ul >li{
+    list-style-type: none;
+    text-decoration-style: none;
+} 
+.navbar-wraper >ul >li >a{
+    text-decoration: none;
+   padding: 9px;
+   color: rgb(124, 116, 116);
+   font-weight: 600;
+   font-family: 'Raleway', sans-serif;
+    
+} 
+.navbar-wraper >ul >li >a:hover{
+    color: rgba(22, 22, 22, 0.849);
+}
+
+.main-box-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 6rem;
+    flex-wrap: wrap;
+}
+.main-box .heading{
+
+    margin-top: 100px;
+    margin-left: 119px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.box >p{
+    color: rgba(94, 90, 90, 0.644);
+    padding-top: 1rem;
+}
+span{
+    color: rgba(94, 90, 90, 0.644);
+}
+span:hover{
+    color: rgb(83, 82, 82);
+    cursor: pointer;
+}
+
+.box h2:hover{
+
+color: rgba(218, 52, 52, 0.644);
+text-decoration: underline rgb(240, 224, 224);
+}
+
+.main-box .heading h2{
+     color: coral;
+     font-family: 'Raleway', sans-serif;
+
+}
+.main-box .heading h2:hover{
+    color: black;
+}
+
+.main-box-wrapper .box{
+    flex:0 0 270px;
+    margin-bottom: 4rem;
+}
+.main-box-wrapper .box img{
+width: 270px;
+height: 135px;
+}
+.main-box-wrapper .box >h2{
+    padding-top: .7rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 830px){
+    #navbar{
+        align-content: center;
+        flex-direction: column;
+    }
+   .logo{
+       margin: 0 auto;
+       padding: 0;
+   }
+    #navbar .navbar-wraper >ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    #navbar .navbar-wraper >ul >li{
+        border-bottom: 2px solid rgba(114, 112, 112, 0.315);
+        
+    }
+    .main-box-wrapper .box{
+        flex:0 0 270px;
+        margin-bottom: 4rem;
+    }
+    .main-box-wrapper .box img{
+    width: 390px;
+    height: 210px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main-box-wrapper .box img{
+        width: 330px;
+        height: 150px;
+        }
+}
