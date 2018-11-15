@@ -126,7 +126,7 @@ height: 135px;
 
 @media screen and (max-width: 500px){
     .main-box-wrapper .box img{
-        width: 330px;
+        width: 300px;
         height: 150px;
         }
 }
